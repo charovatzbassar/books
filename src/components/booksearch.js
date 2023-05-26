@@ -10,11 +10,11 @@ const BookSearch = (props) => {
     try {
       if (searchTerm === "Title") {
         response = await axios.get(
-          `https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyD0cm96FHDEHakzD0R_jxdYmmp-T2DibTY`
+          `https://www.googleapis.com/books/v1/volumes?q=${query}&key=API_KEY`
         );
       } else {
         response = await axios.get(
-          `https://www.googleapis.com/books/v1/volumes?q=inauthor:${query}&key=AIzaSyD0cm96FHDEHakzD0R_jxdYmmp-T2DibTY`
+          `https://www.googleapis.com/books/v1/volumes?q=inauthor:${query}&key=API_KEY`
         );
       }
 
