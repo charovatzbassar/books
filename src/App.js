@@ -1,13 +1,12 @@
 import "./App.css";
-import "./components/header.js";
-import Header from "./components/header.js";
-import SearchForm from "./components/searchform";
+import Header from "./components/header";
+import Search from "./components/searchterm";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <SearchForm />
+      <Search />
     </div>
   );
 }
