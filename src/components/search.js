@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BookSearch from "./searchresults";
+import BookSearch from "./booksearch";
 
 const Search = () => {
   const terms = ["Title", "Author"];
@@ -11,8 +11,8 @@ const Search = () => {
 
   return (
     <React.Fragment>
-      <div>
-        <span>Search by </span>
+      <div id="searchTerm">
+        <span>Search by: </span>
         <select value={value} onChange={handleChange}>
           {terms.map((term) => (
             <option value={term}>{term}</option>

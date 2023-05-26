@@ -5,8 +5,12 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1 className="display-4">Bookster</h1>
-        <h5>All books in one place.</h5>
+        <div id="header">
+          <h1 className="display-4" id="title">
+            Bookster
+          </h1>
+          <h5 id="slogan">All books in one place.</h5>
+        </div>
       </React.Fragment>
     );
   }

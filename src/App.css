@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("./fonts/Roboto-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("./fonts/Roboto-Italic.ttf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url("./fonts/Lobster-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.App {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    padding: 3px 10px;
+    color: white;
+    background-color: #9C6644;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+button:hover {
+    border-color: #9C6644;
+    color: #9C6644;
+    background-color: white;
+}
+
+#title, #slogan {
+    font-family: 'Lobster', sans-serif;
+    color: white;
+}
+
+#header {
+    background-color: #7F5539;
+    padding: 25px;
+}
+
+#searchTerm {
+    padding-top: 20px
+}
+
+#searchInput {
+    padding-bottom: 20px;
+}
+
+.bookInfo {
+    padding: 20px 0;
+}
+
+.bookInfo img {
+    padding-bottom: 25px;
+}
+
+.bookInfo p {
+    font-style: italic;
+}
+
+.bookInfo:nth-of-type(2n) {
+    background-color: #EDE0D4;
+}

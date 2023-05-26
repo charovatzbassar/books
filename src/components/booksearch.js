@@ -26,16 +26,17 @@ const BookSearch = (props) => {
 
   return (
     <React.Fragment>
-      <div>
+      <div id="searchInput">
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          placeholder={"Enter " + props.term}
         />
         <button onClick={() => searchBooks(props.term)}>Search</button>
       </div>
       {books.map((book) => (
-        <div key={book.id}>
+        <div className="bookInfo" key={book.id}>
           <img
             src={
               book.volumeInfo.imageLinks === undefined
